@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Mcstealer::Application.load_tasks
+Mcforceop::Application.load_tasks

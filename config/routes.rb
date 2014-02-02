@@ -1,4 +1,4 @@
-Mcstealer::Application.routes.draw do
+Mcforceop::Application.routes.draw do
   
   resources :logins
   # The priority is based upon order of creation: first created -> highest priority.
