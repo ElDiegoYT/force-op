@@ -10,5 +10,9 @@
 
 <%= yield %>
 
+<% flash.each do |key, value| %>
+	<p style="color: #18D40B;"><%= value %></p>
+<% end %>
+
 </body>
 </html>
