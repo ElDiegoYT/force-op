@@ -5,6 +5,8 @@ gem 'rails', '4.0.2'
 
 gem 'rename'
 
+gem 'thin'
+
 group :test do
   gem 'sqlite3'
 end
