@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Mc Force Op</title>
+<link rel="stylesheet" href="stylesheet.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<script src="jquery-1.10.1.js" type="text/javascript" charset="utf-8"></script>
+<title>Ultra Web Apps</title>
 </head>
 <body>
 <!-- HUD Start-->
@@ -20,11 +22,33 @@
 	</div>
 <!-- HUD End -->
 <div class="content">
-	<p class="fancyText">Force Op Application by McStealer</p>
+	<p class="fancyText">Minecraft Multiplayer Force Op </p>
 <hr />
-	<h2 class="appStart">
-		<%= link_to "Click here to begin", new_login_path %>
-	</h2>
-</div>
+	<div class="homeContent">
+		<p>This is a web site containing a new web application that takes advantage of a bug, allowing player to potentially become op and have operator commands. This web application is still in very eary beta however it works and we would love some beta testers! 1.7.2 AND 1.8 Compliant.</p>
+	</div>
+<!-- Start Login APP -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+	</script>
+	<script>
+	$(document).ready(function(){
+	  $(":input").css("background-color","#CDCDCD");
+	});
+	</script>
+	<div class="gbContainer">
+		<div id="gb"><%= link_to "Start Beta App", new_login_path %></div>
+	</div>
+	<script src="jquery-1.10.1.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		$(document).ready(function()
+		{
+			$('form#show').hide();
+			$('a#gb').click(function()
+			{
+				$('a#gb, div#gbContainer').fadeOut();
+			});
+		  });
+		</script>
+<!-- End Login APP -->
 </body>
 </html>

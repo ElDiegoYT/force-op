@@ -1,220 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="jquery-1.10.1.js" type="text/javascript" charset="utf-8"></script>
-<title>Ultra Web Apps</title>
-<style>
-/* Start HUD Styling */
+  <title>The page you were looking for doesn't exist (404)</title>
+  <style>
+  body {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+  }
 
-html {
-	background-image: url('http://i1278.photobucket.com/albums/y520/fordsally/header_zpsde28167e.png~original');
-	background-repeat: repeat-x;
-	border-bottom: 1px #5e7d99 solid;
-	height: 59px;
-	background-color: #EDEDED;
-}
+  div.dialog {
+    width: 25em;
+    margin: 4em auto 0 auto;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 4em 0 4em;
+  }
 
-h1 {
-	font-family: verdana;
-	font-style: italic;
-	letter-spacing: -1;
-	color: #2F4761;
-	opacity: 0.5;
-	filter: alpha(opacity=50);
-	padding-left: 35px;
-	margin-top: 6px;
-	float: left;
-}
+  h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
 
-h4 {
-	color: white;
-	float: right;
-	padding-top: 7px;
-	font-family: verdana;
-	font-size: 12px;
-	text-shadow: 0px 0px 2px white;
-	
-}
-
-.menuBar {
-	float: right;
-	padding-top: 11px;
-	padding-right: 10px;
-}
-
-.grey {
-	color: #606060;
-	border: solid 1px #b7b7b7;
-	background: #fff;
-	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
-	background: -moz-linear-gradient(top, #fff, #ededed);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
-}
-
-.button {
-	display: inline-block;
-	zoom: 1;
-	vertical-align: baseline;
-	margin: 0 2px;
-	outline: none;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	font: 14px/100% Arial, Helvetica, sans-serif;
-	padding: .5em 2em .55em;
-	text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	-webkit-border-radius: .5em;
-	-moz-border-radius: .5em;
-	border-radius: .5em;
-	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	box-shadow: 0 1px 2px rgba(0,0,0,.2);
-}
-
-.button:hover {
-	background: #ededed;
-	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
-	background: -moz-linear-gradient(top,  #fff,  #dcdcdc);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
-}
-
-.button:active {
-	color: #999;
-	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#fff));
-	background: -moz-linear-gradient(top,  #ededed,  #fff);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff');
-}
-
-.content {
-	padding-top: 72px;
-}
-
-/* End HUD Styling */
-
-h2 {
-	text-align: center;
-	font-family: verdana;
-	font-size: 20px;
-}
-
-hr {
-	border: 0;
-    height: 1px;
-	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-}
-
-.homeContent {
-	text-align: center;
-	font-size: 17px;
-	font-family: sans-serif;
-	color: #011111;
-	padding-top: 8px;
-	padding-left: 200px;
-	padding-right: 200px;
-}
-
-.fancyText {
-	text-align: center;
-	color: #0068bf;
-	font-style: italic;
-	font-family: times;
-	text-shadow: 0px 1px 0px black;
-	font-size: 21px;
-}
-
-.appStart {
-	padding-top: 100px;
-	text-align: center;
-}
-
-.gbContainer {
-	text-align: center;
-	padding-top: 60px;
-}
-
-#gb {
-	
-	-moz-box-shadow:inset 0px 1px 0px 0px #caefab;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #caefab;
-	box-shadow:inset 0px 1px 0px 0px #caefab;
-	background-color:#77d42a;
-	-moz-border-radius:12px;
-	-webkit-border-radius:12px;
-	border-radius:12px;
-	border:1px solid #268a16;
-	display:inline-block;
-	color:#25490A;
-	font-family:arial;
-	font-size:20px;
-	font-weight:bold;
-	padding:12px 30px;
-	text-decoration:none;
-	text-shadow:1px 1px 0px #aade7c;
-}
-
-#gb:hover {
-	background-color:#5cb811;
-	
-}
-
-#gb:active {
-	position:relative;
-	top:1px;
-}
-
-#show {
-	text-align: center;
-	padding: 90px;
-}
-</style>
+  body > p {
+    width: 33em;
+    margin: 0 auto 1em;
+    padding: 1em 0;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow:0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
 </head>
+
 <body>
-<!-- HUD Start-->
-<h1>&#305&#305&#305 MC Force Op &#305&#305&#305</h1>
-<h4>&radic;BETA</h2>
-	<div class="menuBar">
-		<a href="/" class="grey button">
-			<img src="http://i1278.photobucket.com/albums/y520/fordsally/home_zps728d0710.png~original" height="11px" width="14px" alt="home.png"> Home
-		</a>
-		<a href="/logins" class="grey button">
-			<img src="http://i1278.photobucket.com/albums/y520/fordsally/bvnjv-md_zpsa74040be.png~original" height="11px" width="14px" alt="apps.png"> Force Op
-		</a>
-		<a href="about.html" class="grey button">
-			<img src="http://i1278.photobucket.com/albums/y520/fordsally/Computer-Hardware-Monitor-icon_zps0410f8b7.png~original" height="11px" width="11px" alt="login.png"> About
-		</a>
-	</div>
-<!-- HUD End -->
-<div class="content">
-	<p class="fancyText">Minecraft Multiplayer Force Op </p>
-<hr />
-	<div class="homeContent">
-		<p>This is a web site containing a new web application that takes advantage of a bug, allowing player to potentially become op and have operator commands. This web application is currently in beta however it is stable and ready for use! 1.7.2 AND 1.8 Compliant.</p>
-	</div>
-<!-- Start Login APP -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
-	</script>
-	<script>
-	$(document).ready(function(){
-	  $(":input").css("background-color","#CDCDCD");
-	});
-	</script>
-	<div class="gbContainer">
-		<a href="/logins" id="gb">Get Started</a>
-	</div>
-	<script src="jquery-1.10.1.js" type="text/javascript" charset="utf-8"></script>
-		<script>
-		$(document).ready(function()
-		{
-			$('form#show').hide();
-			$('a#gb').click(function()
-			{
-				$('a#gb, div#gbContainer').fadeOut();
-			});
-		  });
-		</script>
-<!-- End Login APP -->
+  <!-- This file lives in public/404.html -->
+  <div class="dialog">
+    <h1>The page you were looking for doesn't exist. (Thats a 404)</h1>
+    <p>You may have mistyped the address or the page may have moved.</p>
+  </div>
+  <p>If you are the application owner check the logs for more information.</p>
 </body>
 </html>

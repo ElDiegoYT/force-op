@@ -7,6 +7,8 @@ gem 'rename'
 
 gem 'thin'
 
+gem 'high_voltage' 
+
 group :test do
   gem 'sqlite3'
 end
