@@ -1,6 +1,6 @@
 Mcforceop::Application.routes.draw do
   
-  root :to => "logins#index"
+  root :to => "index#index"
   resources :logins
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
