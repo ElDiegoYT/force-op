@@ -1,168 +1,101 @@
-// Place all the styles related to the logins controller here.
+// Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-/* Start HUD Styling */
-
 html {
-	background-image: url('http://i1278.photobucket.com/albums/y520/fordsally/header_zpsde28167e.png~original');
-	background-repeat: repeat-x;
-	border-bottom: 1px #5e7d99 solid;
-	height: 59px;
-	background-color: #EDEDED;
+	background-image: url('https://minecraft.net/images/bg_main.png');
+	font-family: 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+	word-spacing: .1em;
+	font-size: 14px;
+	line-height: 22px;
 }
 
-h1 {
-	font-family: verdana;
-	font-style: italic;
-	letter-spacing: -1;
-	color: #2F4761;
-	opacity: 0.5;
-	filter: alpha(opacity=50);
-	padding-left: 35px;
-	margin-top: 6px;
-	float: left;
-}
+// APP BUTTON
 
-h4 {
-	color: white;
-	float: right;
-	padding-top: 7px;
-	font-family: verdana;
-	font-size: 12px;
-	text-shadow: 0px 0px 2px white;
-	
-}
-
-.menuBar {
-	float: right;
-	padding-top: 11px;
-	padding-right: 10px;
-}
-
-.grey {
-	color: #606060;
-	border: solid 1px #b7b7b7;
-	background: #fff;
-	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
-	background: -moz-linear-gradient(top, #fff, #ededed);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
-}
-
-.button {
-	display: inline-block;
-	zoom: 1;
-	vertical-align: baseline;
-	margin: 0 2px;
-	outline: none;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	font: 14px/100% Arial, Helvetica, sans-serif;
-	padding: .5em 2em .55em;
-	text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	-webkit-border-radius: .5em;
-	-moz-border-radius: .5em;
-	border-radius: .5em;
-	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	box-shadow: 0 1px 2px rgba(0,0,0,.2);
-}
-
-.button:hover {
-	background: #ededed;
-	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
-	background: -moz-linear-gradient(top,  #fff,  #dcdcdc);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
-}
-
-.button:active {
-	color: #999;
-	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#fff));
-	background: -moz-linear-gradient(top,  #ededed,  #fff);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff');
-}
-
-.content {
-	padding-top: 72px;
-}
-
-/* End HUD Styling */
-
-h2 {
-	text-align: center;
-	font-family: verdana;
-	font-size: 20px;
-}
-
-hr {
-	border: 0;
-    height: 1px;
-	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-}
-
-.homeContent {
-	text-align: center;
-	font-size: 17px;
-	font-family: sans-serif;
-	color: #011111;
-	padding-top: 8px;
-	padding-left: 200px;
-	padding-right: 200px;
-}
-
-.fancyText {
-	text-align: center;
-	color: #0068bf;
-	font-style: italic;
-	font-family: times;
-	text-shadow: 0px 1px 0px black;
-	font-size: 21px;
-}
-
-.appStart {
-	padding-top: 100px;
-	text-align: center;
-}
-
-.gbContainer {
-	text-align: center;
-	padding-top: 60px;
-}
-
-#gb {
-	
-	-moz-box-shadow:inset 0px 1px 0px 0px #caefab;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #caefab;
-	box-shadow:inset 0px 1px 0px 0px #caefab;
-	background-color:#77d42a;
-	-moz-border-radius:12px;
-	-webkit-border-radius:12px;
-	border-radius:12px;
-	border:1px solid #268a16;
+.launch {
+	-moz-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+	box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #9dce2c), color-stop(1, #8cb82b) );
+	background:-moz-linear-gradient( center top, #9dce2c 5%, #8cb82b 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dce2c', endColorstr='#8cb82b');
+	background-color:#9dce2c;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0px;
+	border:1px solid #83c41a;
 	display:inline-block;
-	color:#25490A;
-	font-family:arial;
-	font-size:20px;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
 	font-weight:bold;
-	padding:12px 30px;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:200px;
 	text-decoration:none;
-	text-shadow:1px 1px 0px #aade7c;
+	text-align:center;
+	text-shadow:1px 1px 0px #689324;
 }
 
-#gb:hover {
-	background-color:#5cb811;
-	
+.launch:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8cb82b), color-stop(1, #9dce2c) );
+	background:-moz-linear-gradient( center top, #8cb82b 5%, #9dce2c 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cb82b', endColorstr='#9dce2c');
+	background-color:#8cb82b;
 }
 
-#gb:active {
+.launch:active {
 	position:relative;
 	top:1px;
 }
 
-#show {
+// END
+
+header {
+	font-family: 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+	padding: .4em 10px .2em 10px;
+	padding-left: 20px;
+	border-bottom: 2px solid #A34747;
+	border-radius: 10px;
+	text-shadow: 1px 1px 3px #9daac5;
+	color: #9daac5;
 	text-align: center;
-	padding: 90px;
+}
+
+.launchContainer {
+	padding-top: 40px;
+	width: 200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.flash {
+	color: #CACACA;
+	letter-spacing: 1px;
+}
+
+.content {
+	padding-top: 40px;
+	color: #CACACA;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 28px;
+	letter-spacing: 1px;
+}
+
+form, .content {
+	text-align: center;
 }

