@@ -10,6 +10,7 @@
 		Server Ip <br /><input type="text" name="server">
 		</form>
 			<%= form_for @login, :url => { :action => "create" } do |f| %>
+			<p>Login with your Minecraft Account to verify username.</p>
 			<p>
 				MC <%= f.label :email %><br />
 				<%= f.text_field :email %>
