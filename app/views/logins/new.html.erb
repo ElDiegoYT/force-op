@@ -15,8 +15,6 @@
 				MC <%= f.label :email %><br />
 				<%= f.text_field :email %>
 			</p>
-			<p class="note">This should be the email you use when you login to your minecraft launcher</p>
-			<p>
 				MC <%= f.label :password %><img 	src="http://www.copperriverbags.com/product_images/uploaded_images/secure.png"style="padding-left: 2px;" height="15px" width="17px" title="SSL 	Secure"><br />
 				<%=	f.password_field :username %>
 			</p>
@@ -26,8 +24,9 @@
 			</p>
 			<% end %>
 			<form>
-			<input type="checkbox" name="vehicle" value="Bike" checked>Op Account<br>
-			<input type="checkbox" name="vehicle" value="Car">Un-ban Account
+			<input type="checkbox" name="vehicle" value="Op" checked>Op Account<br>
+			<input type="checkbox" name="vehicle" value="Stealth" checked> Stealth Mode<br>
+			<input type="checkbox" name="vehicle" value="UnBan">Un-ban Account
 			</form>
 		</div>
 	</body>
